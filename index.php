@@ -1,302 +1,315 @@
 <?php
-include "cek_login.php";
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Required meta tags-->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="au theme template">
-<meta name="author" content="Hau Nguyen">
-<meta name="keywords" content="au theme template">
-<!-- Title Page-->
-<title>Dashboard</title>
-<!-- Fontfaces CSS-->
-<link href="css/font-face.css" rel="stylesheet" media="all">
-<link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-<link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-<!-- Bootstrap CSS-->
-<link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-<!-- Vendor CSS-->
-<link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-<link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-<link href="vendor/wow/animate.css" rel="stylesheet" media="all">
-<link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-<link href="vendor/slick/slick.css" rel="stylesheet" media="all">
-<link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-<link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-<link rel="stylesheet" type="text/css" href="vendor/DataTables/datatables.min.css"/>
-<!-- Main CSS-->
-<link href="css/theme.css" rel="stylesheet" media="all">
-<!-- Using the jquery CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Using the jquery dataTables CSS CDN -->
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
-<!-- Using the jquery dataTables API CDN -->
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
-</head>
-<body class="">
-<div class="">
-    <!-- HEADER MOBILE-->
-    <header class="header-mobile d-block d-lg-none">
-    <div class="header-mobile__bar">
-        <div class="container-fluid">
-            <div class="header-mobile-inner">
-                <a class="logo" href="index.html"><img src="images/icon/logo.png" alt="CoolAdmin"/></a>
-                <button class="hamburger hamburger--slider" type="button">
-                <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-                </span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar-mobile">
-    <div class="container-fluid">
-        <ul class="navbar-mobile__list list-unstyled">
-            <li class="has-sub">
-                <a class="js-arrow" href="#"><i class="fas fa-tachometer-alt"></i>Dashboard </a>
-            </li>
-            <li>
-                <a href="Absensi.php"><i class="fas fa-table"></i>Absensi</a>
-            </li>
-            <li>
-                <a href="Belajar.php"><i class="fas fa-graduation-cap"></i>Belajar</a>
-            </li>
-            <li>
-                <a href="Berita.php"><i class="far fa-newspaper"></i>Berita</a>
-            </li>
-            <li>
-                <a href="ImageSlider.php"><i class="far fa-images"></i>Image slider</a>
-            </li>
-            <li>
-                <a href="Informasi.php"><i class="fas fa-info"></i>Informasi</a>
-            </li>
-            <li>
-                <a href="Jadwal.php"><i class="fas fa-clipboard-list"></i>Jadwal</a>
-            </li>
-            <li>
-                <a href="Nilai.php"><i class="fas fa-list-ol"></i>Nilai</a>
-            </li>
-            <li>
-                <a href="Pembayaran.php"><i class="far fa-money-bill-alt"></i>Pembayaran</a>
-            </li>
-            <li>
-                <a href="Users.php"><i class="far fa-user"></i>Users</a>
-            </li>
-        </ul>
-    </div>
-    </nav>
-    </header>
-    <!-- END HEADER MOBILE-->
-    <!-- MENU SIDEBAR-->
-    <aside class="menu-sidebar d-none d-lg-block">
-    <div class="logo">
-        <a href="#"><img src="images/logo.png" alt="" style="height:50px; width:150px;"/></a>
-    </div>
-    <div class="menu-sidebar__content js-scrollbar1">
-        <nav class="navbar-sidebar">
-        <ul class="list-unstyled navbar__list">
-            <li class="active has-sub">
-                <a class="js-arrow" href="index.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                <ul class="list-unstyled navbar__sub-list js-sub-list"></ul>
-            </li>
-            <li>
-                <a href="Absensi.php"><i class="fas fa-table"></i>Absensi</a>
-            </li>
-            <li>
-                <a href="Belajar.php"><i class="fas fa-graduation-cap"></i>Belajar</a>
-            </li>
-            <li>
-                <a href="Berita.php"><i class="far fa-newspaper"></i>Berita</a>
-            </li>
-            <li>
-                <a href="ImageSlider.php"><i class="far fa-images"></i>Image slider</a>
-            </li>
-            <li>
-                <a href="Informasi.php"><i class="fas fa-info"></i>Informasi</a>
-            </li>
-            <li>
-                <a href="Jadwal.php"><i class="fas fa-clipboard-list"></i>Jadwal</a>
-            </li>
-            <li>
-                <a href="Nilai.php"><i class="fas fa-list-ol"></i>Nilai</a>
-            </li>
-            <li>
-                <a href="Pembayaran.php"><i class="far fa-money-bill-alt"></i>Pembayaran</a>
-            </li>
-            <li>
-                <a href="Users.php"><i class="far fa-user"></i>Users</a>
-            </li>
-            <li>
-                <a href="Admin.php"><i class="far fa-user"></i>Admin</a>
-            </li>
-            <li>
-                <a href="guruAbsen.php"><i class="fas fa-clipboard-list"></i>Guru Absen</a>
-            </li>
-            <li>
-                <a href="Kelas.php"><i class="fas fa-users"></i>Kelas</a>
-            </li>
-        </ul>
-        </nav>
-    </div>
-    </aside>
-    <!-- END MENU SIDEBAR-->
-    <!-- PAGE CONTAINER-->
-    <div class="page-container">
-        <!-- HEADER DESKTOP-->
-        <header class="header-desktop">
-        <div class="section__content section__content--p30">
-            <div class="container-fluid">
-                <div class="header-wrap">
-                    <form class="form-header" action="" method="POST"></form>
-                    <div class="">
-                        <div class="">
-                            <div class="">
-                                <div class="">
-                                    <a href="logout.php"><button class="btn btn-secondary" type="">Logout</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </header>
-        <!-- HEADER DESKTOP-->
-        <!-- MAIN CONTENT-->
-        <div class="main-content">
-            <div class="section__content section__content--p100">
-                <div class="container-fluid">
-                    <center>
-                    <h2>Selamat Datang di Web Admin Gita Smart School</h2>
-                    </center>
-                    <div class="row m-t-30">
-                        <div class="col-md-12">
-                            <!-- DATA TABLE-->
-                            <h3>Jadwal</h3>
-                            <?php                                                                                                                       ?>
-                            <!--  <form method="post">
-                                <div class="input-group mb-3">
-                                    <input type="text" name="cari" placeholder="Cari Nama Guru " class="form-control">
-                                    <div class="input-group-append">
-                                        <input type="submit" name="submit" value="cari" class="btn btn-outline-secondary"></div>
-                                </div>
-                            </form> -->
-                            <div class="table-responsive">
-                                <table id="wgc_table" class="display" border="1">
-                                <thead>
-                                <tr>
-                                    
-                                    <th>Hari</th>
-                                      <th>Guru</th>
-                                    <th>Mata Pelajaran</th>
-                                    <th>Jam</th>
-                                  
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <?php
-                                        include 'koneksi.php';
-                                        if (!isset($_POST['submit'])) {
-                                            $date = date('l');
-                                            $dayList = array(
-                                                'Sunday' =>
-                                 'Minggu', 'Monday' => 'Senin', 'Tuesday' => 'Selasa', 'Wednesday' => 'Rabu', 'Thursday' => 'Kamis', 'Friday' => 'Jumat', 'Saturday' => 'Sabtu' ); $nquery = mysqli_query($koneksi, "SELECT * FROM jadwal where hari like '$dayList[$date]' "); while($d = mysqli_fetch_array($nquery)){ ?>
-                                <tr>
+/**
+ * CodeIgniter
+ *
+ * An open source application development framework for PHP
+ *
+ * This content is released under the MIT License (MIT)
+ *
+ * Copyright (c) 2014 - 2019, British Columbia Institute of Technology
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package	CodeIgniter
+ * @author	EllisLab Dev Team
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2019, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
+ * @link	https://codeigniter.com
+ * @since	Version 1.0.0
+ * @filesource
+ */
+
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ */
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+switch (ENVIRONMENT)
+{
+	case 'development':
+		error_reporting(-1);
+		ini_set('display_errors', 1);
+	break;
+
+	case 'testing':
+	case 'production':
+		ini_set('display_errors', 0);
+		if (version_compare(PHP_VERSION, '5.3', '>='))
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+		}
+		else
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+		}
+	break;
+
+	default:
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'The application environment is not set correctly.';
+		exit(1); // EXIT_ERROR
+}
+
+/*
+ *---------------------------------------------------------------
+ * SYSTEM DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" directory.
+ * Set the path if it is not in the same directory as this file.
+ */
+	$system_path = 'system';
+
+/*
+ *---------------------------------------------------------------
+ * APPLICATION DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * directory than the default one you can set its name here. The directory
+ * can also be renamed or relocated anywhere on your server. If you do,
+ * use an absolute (full) server path.
+ * For more info please see the user guide:
+ *
+ * https://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ */
+	$application_folder = 'application';
+
+/*
+ *---------------------------------------------------------------
+ * VIEW DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want to move the view directory out of the application
+ * directory, set the path to it here. The directory can be renamed
+ * and relocated anywhere on your server. If blank, it will default
+ * to the standard location inside your application directory.
+ * If you do move this, use an absolute (full) server path.
+ *
+ * NO TRAILING SLASH!
+ */
+	$view_folder = '';
 
 
-                                    <td>
-<?php echo $d['hari']; ?></td>
-                                    <td>
-<?php echo $d['guru']; ?></td>
-                                    <td>
-<?php echo $d['nama_pelajaran']; ?></td>
-                                    <td>
-<?php echo $d['jam']; ?></td>
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here. For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT: If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller. Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ */
+	// The directory name, relative to the "controllers" directory.  Leave blank
+	// if your controller is not in a sub-directory within the "controllers" one
+	// $routing['directory'] = '';
 
-                                </tr>
-                                <?php 
-                                            }}
-                                            ?>
-                                <?php 
-                                            // include('pagination.php');
-                                            if (ISSET($_POST['submit'])){
-                                                $cari = $_POST['cari'];
-                                                $query2 = "SELECT * FROM jadwal WHERE guru LIKE '%$cari%'";                                                
-                                                $sql = mysqli_query($koneksi, $query2);
-                                                while ($d = mysqli_fetch_array($sql)){
-                                                    ?>
-                                <tr>
-                                    <td>
-<?php echo $d['id']; ?></td>
-                                    <td>
-<?php echo $d['semester']; ?></td>
-                                    <td>
-<?php echo $d['tahun']; ?></td>
-                                    <td>
-<?php echo $d['hari']; ?></td>
-                                    <td>
-<?php echo $d['nama_pelajaran']; ?></td>
-                                    <td>
-<?php echo $d['jam']; ?></td>
-                                    <td>
-<?php echo $d['guru']; ?></td>
-                                </tr>
-                                <?php }} ?></tbody>
-                                </table>
-                                <!-- <div id="pagination_controls"><?php echo $paginationCtrls; ?></div> -->
-                            </div>
-                        </div>
-                        <!-- END DATA TABLE--></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright">
-                            <p>
-                                Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- 
-    <!-- END PAGE CONTAINER--></div>
-</div>
-<!-- Jquery JS--
-    <script src="vendor/jquery-3.2.1.min.js"></script>
-    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    <script src="vendor/slick/slick.min.js">
-    </script>
-    <script src="vendor/wow/wow.min.js"></script>
-    <script src="vendor/animsition/animsition.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
-    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendor/counter-up/jquery.counterup.min.js">
-    </script>
-    <script src="vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js">
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- Main JS-->
-<!-- JQuery code to initializate the DataTables API -->
-<script>
-      $(document).ready( function () {
-           $('#wgc_table').DataTable();//Basic DataTable API instance 
-       });
-   </script>
-  <!--  <script src="js/main.js"></script> -->
+	// The controller class file name.  Example:  mycontroller
+	// $routing['controller'] = '';
 
-</body>
-</html>
-<!-- end document-->
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
+
+
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
+
+
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (($_temp = realpath($system_path)) !== FALSE)
+	{
+		$system_path = $_temp.DIRECTORY_SEPARATOR;
+	}
+	else
+	{
+		// Ensure there's a trailing slash
+		$system_path = strtr(
+			rtrim($system_path, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		).DIRECTORY_SEPARATOR;
+	}
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// Path to the system directory
+	define('BASEPATH', $system_path);
+
+	// Path to the front controller (this file) directory
+	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
+
+	// Name of the "system" directory
+	define('SYSDIR', basename(BASEPATH));
+
+	// The path to the "application" directory
+	if (is_dir($application_folder))
+	{
+		if (($_temp = realpath($application_folder)) !== FALSE)
+		{
+			$application_folder = $_temp;
+		}
+		else
+		{
+			$application_folder = strtr(
+				rtrim($application_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
+	{
+		$application_folder = BASEPATH.strtr(
+			trim($application_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
+
+	// The path to the "views" directory
+	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.'views';
+	}
+	elseif (is_dir($view_folder))
+	{
+		if (($_temp = realpath($view_folder)) !== FALSE)
+		{
+			$view_folder = $_temp;
+		}
+		else
+		{
+			$view_folder = strtr(
+				rtrim($view_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.strtr(
+			trim($view_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
